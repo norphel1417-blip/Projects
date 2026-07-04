@@ -1,0 +1,77 @@
+/* setup.css - Styling for Setup Page */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Roboto', 'Arial', sans-serif;
+	background: linear-gradient(180deg, #0f9d58, #08c4f4);
+	min-height: 100vh;
+	color: #333;
+	padding: 20px;
+}
+
+container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.setup-card {
+    background: white;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #0f9d58;
+    text-align: center;
+    font-size: 2.8em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #08c4f4;
+    font-size: 1.8em;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+h3 {
+    color: #555;
+    font-size: 1.3em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+p , li {
+    line-height: 1.8;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+ul {
+    margin-left: 25px;
+}
+
+code {
+    background: #f4f4f4;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+    color: #d14365;
+}
+
+.rock-note {
+    background: #fff9c4;
+    border-left: 4px solid #ffcc00;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+}

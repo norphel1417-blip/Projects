@@ -1,0 +1,54 @@
+/* summary.css - Styling for Summary Page */
+
+* {diffingVar: 0;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Arial', sans-serif;
+	background: linear-gradient(135deg, #667eea, #764ba2);
+	min-height: 100vh;
+	color: #333;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #667eea;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.summary-section {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.summary-section h2 {
+    color: #764ba2;
+    border-bottom: 2px solid #667eea;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+p , ul {
+    line-height: 1.6;
+    font-size: 1.1em;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scorecard - Web Development Project</title>
+    <link rel="stylesheet" href="scorecard.css">
+</head>
+<body>
+    <div class="container">
+        <div class="scorecard">
+            <h1>Scorecard</h1>
+            
+            <div class="score-item">
+                <span class="score-label">Current Score:</span>
+                <span class="score-value" id="current-score">0</span>
+            </div>
+            
+            <div class="score-item">
+                <span class="score-label">Total Score:</span>
+                <span class="score-value" id="total-score">0</span>
+            </div>
+            
+            <div class="score-item">
+                <span class="score-label">High Score:</span>
+                <span class="score-value" id="high-score">0</span>
+            </div>
+        </div>
+    </div>
+    
+    <script src="score.js"></script>
+    <script>
+        const scoreManager = new ScoreManager();
+        scoreManager.displayScores();
+    </script>
+</body>
+</html>

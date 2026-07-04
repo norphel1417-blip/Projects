@@ -1,0 +1,60 @@
+/* scorecard.css - Styling for Scorecard Page */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background: linear-gradient(120deg, #289866, #1e6f5c);
+	color: white;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	width: 90%;
+	max-width: 800px;
+    padding: 40px;
+}
+
+.scorecard {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.score-item {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.score-label {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.score-value {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #ffd700;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
