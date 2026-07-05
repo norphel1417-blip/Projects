@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hemant Godve - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">HG</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <canvas id="particles-canvas"></canvas>
+        <div class="hero-background-image"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">Hi, I'm</span>
+                    <span class="title-line hero-name" id="typewriter"></span>
+                </h1>
+                <p class="hero-subtitle fade-in-up">Computer Science Student at IIT Bombay</p>
+                <p class="hero-description fade-in-up">Passionate about creating innovative solutions and making a positive impact through technology</p>
+                <div class="hero-buttons fade-in-up">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image fade-in-up">
+                <div class="profile-image-container">
+                    <div class="profile-image"></div>
+                </div>
+            </div>
+        </div>
+      
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Passionate learner with a drive for innovation</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description fade-in-left">
+                        I'm a Computer Science student at the prestigious Indian Institute of Technology Bombay, 
+                        one of India's premier technical institutions. Having qualified JEE Advanced among the top 
+                        candidates, I've demonstrated my commitment to academic excellence and problem-solving.
+                    </p>
+                    <p class="about-description fade-in-left">
+                        My journey in technology spans across various domains including web development, machine learning, 
+                        competitive programming, and software engineering. I believe in continuous learning and contributing 
+                        to the community through projects and volunteer work.
+                    </p>
+                    
+                    <div class="education-section fade-in-left">
+                        <h3>Education</h3>
+                        <div class="education-item">
+                            <h4>Indian Institute of Technology Bombay</h4>
+                            <p>B.Tech in Computer Science • 2024-2028</p>
+                            <ul>
+                                <li>JEE Advanced Qualified - Among top 180,200 candidates</li>
+                                <li>Active in NSS and technical communities</li>
+                            </ul>
+                        </div>
+                        <div class="education-item">
+                            <h4>Jawahar Navodaya Vidyalaya</h4>
+                            <p>12th Standard • 2017-2024</p>
+                            <ul>
+                                <li>Science Stream - 86.8 Aggregate</li>
+                                <li>Dakshana Foundation Scholar</li>
+                                <li>91.6 Aggregate in 10th Standard</li>
+                                <li>JNVST Qualified at age 11</li>
+                                <li>MSCE Pune Pre Upper Primary Scholarship</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="workspace-image fade-in-right">
+                    <div class="image-container">
+                        <div class="workspace-bg"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-section">
+                <h3 class="skills-title">Technical Skills</h3>
+                <div class="skills-grid">
+                    <div class="skill-item fade-in-up" data-skill="95">
+                        <div class="skill-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h4>Data Structures</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="50%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item fade-in-up" data-skill="90">
+                        <div class="skill-icon">
+                            <i class="fab fa-js-square"></i>
+                        </div>
+                        <h4>JavaScript</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="70%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item fade-in-up" data-skill="88">
+                        <div class="skill-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h4>Web Development</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="88%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item fade-in-up" data-skill="85">
+                        <div class="skill-icon">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <h4>Python</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="60%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item fade-in-up" data-skill="80">
+                        <div class="skill-icon">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <h4>React</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="55%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item fade-in-up" data-skill="70">
+                        <div class="skill-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h4>Machine Learning</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="30%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Projects</h2>
+                <p class="section-subtitle">Showcasing my technical expertise and creativity</p>
+            </div>
+            
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="ml">Machine Learning</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="other">Other</button>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card fade-in-up" data-category="ml">
+                    <div class="project-image">
+                        <div class="ml-project-bg"></div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Web Development Project</h3>
+                        <p class="project-description">Responsive web application built with HTML, CSS, and JavaScript, featuring a modern design and user-friendly interface.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card fade-in-up" data-category="web">
+                    <div class="project-image">
+                        <div class="web-project-bg"></div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Digital Footprint</h3>
+                        <p class="project-description">Developed a personal portfolio using HTML, CSS, and JavaScript to showcase academic projects, technical skills, and coding experience. Highlights include work in web development, with a focus on clean design, responsive layout, and structured documentation.
+</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Html</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card fade-in-up" data-category="other">
+                    <div class="project-image">
+                        <div class="coding-project-bg"></div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Interactive Dynamics Sandbox</h3>
+                        <p class="project-description">Developed an interactive physics sandbox using a physics engine, enabling real-time shape creation with realistic gravity and collisions. Features include mouse-driven drag-and-drop, responsive canvas, boundary walls, and a clean UI with multiple shape generators and randomized visual properties.</p>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">Canvas</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card fade-in-up" data-category="mobile">
+                    <div class="project-image">
+                        <div class="mobile-project-bg"></div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">CloudKanban Board</h3>
+                        <p class="project-description">Built a real-time Kanban Task Board with Firebase authentication and Firestore for cross-device sync. Features include drag-and-drop task movement, seamless UI updates, and a responsive Tailwind CSS interface with error handling and instant feedback.</p>   
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card fade-in-up" data-category="other">
+                    <div class="project-image">
+                        <div class="competitive-project-bg"></div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Weather App using NodeJS</h3>
+                        <p class="project-description">Developed a weather application using Node.js and Express, featuring real-time weather updates, location-based forecasts, and a user-friendly interface.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">APIs</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card fade-in-up" data-category="web">
+                    <div class="project-image">
+                        <div class="graphics-project-bg"></div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Web-Based Chess Game</h3>
+                        <p class="project-description">Developed a browser-based chess game with a responsive, animated board and two-player turn handling using HTML, CSS, JavaScript. Enhanced user experience with status bars, transitions, and visual effects, built for easy setup and future AI integration.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in-up" data-category="web">
+                    <div class="project-image">
+                        <div class="graphics-project-bg"></div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">AeroRender – 3D Propeller Visualization</h3>
+                        <p class="project-description">Developed a 3D visualization tool for aircraft propellers using WebGL and Three.js, featuring real-time rendering and interactive controls for design analysis.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Blender</span>
+                            <span class="tech-tag">3D Modeling</span>
+                            <span class="tech-tag">Texturing</span>
+                            <span class="tech-tag">Animation</span>
+                            <span class="tech-tag">Rendering</span>
+                            <span class="tech-tag">Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in-up" data-category="web">
+                    <div class="project-image">
+                        <div class="graphics-project-bg"></div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Drone Project</h3>
+                        <p class="project-description">Built a WiFi-controlled drone from scratch, handling circuit design, component integration, and flight testing. Programmed the ESP32 in C++ for motor control and wireless comms, with PID stabilization using MPU6050 sensor data for smooth, responsive flight.</p>
+                       <div class="project-tech">
+                            <span class="tech-tag">ESP32</span>
+                            <span class="tech-tag">C++</span>
+                            <span class="tech-tag">WiFi</span>
+                            <span class="tech-tag">Fusion360</span>
+                            <span class="tech-tag">Arduino IDE</span>
+                            <span class="tech-tag">Drone</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in-up" data-category="web">
+                    <div class="project-image">
+                        <div class="graphics-project-bg"></div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Assembly Language Microprocessor Design</h3>
+                        <p class="project-description">Programmed the 8051 microcontroller in assembly and C for memory, I/O, and interrupt control. Interfaced LEDs, switches, and sensors using port and timer programming, applying digital logic and architecture concepts in hands-on embedded projects.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">8051 Microcontroller</span>
+                            <span class="tech-tag">Assembly Language</span>
+                            <span class="tech-tag">C Programming</span>
+                            <span class="tech-tag">Embedded Systems</span>
+                            <span class="tech-tag">Digital Logic</span>
+                            <span class="tech-tag">Microprocessor Design</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Experience & Achievements</h2>
+                <p class="section-subtitle">My journey in academics and community service</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item fade-in-left">
+                    <div class="timeline-date">2024-2025</div>
+                    <div class="timeline-content">
+                        <h3>NSS Volunteer</h3>
+                        <h4>IIT Bombay</h4>
+                        <p>Actively participating in environmental and sustainability initiatives, contributing to community service projects and social responsibility programs. Organized awareness campaigns and participated in rural development activities.</p>
+                        <div class="timeline-skills">
+                            <span class="skill-tag">Leadership</span>
+                            <span class="skill-tag">Community Service</span>
+                            <span class="skill-tag">Project Management</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item fade-in-right">
+                    <div class="timeline-date">2024</div>
+                    <div class="timeline-content">
+                        <h3>Design Workshop Participant</h3>
+                        <h4>IIT Bombay</h4>
+                        <p>Completed comprehensive design workshop focusing on modern design principles, user experience methodologies, and creative problem-solving techniques. Gained hands-on experience with design tools and methodologies.</p>
+                        <div class="timeline-skills">
+                            <span class="skill-tag">UI/UX Design</span>
+                            <span class="skill-tag">Creative Thinking</span>
+                            <span class="skill-tag">Design Tools</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item fade-in-left">
+                    <div class="timeline-date">2024</div>
+                    <div class="timeline-content">
+                        <h3>JEE Advanced Qualified</h3>
+                        <h4>Academic Achievement</h4>
+                        <p>Successfully qualified JEE Advanced examination, ranking among the top 180,200 candidates nationwide. This achievement demonstrates strong analytical and problem-solving capabilities in mathematics, physics, and chemistry.</p>
+                        <div class="timeline-skills">
+                            <span class="skill-tag">Problem Solving</span>
+                            <span class="skill-tag">Analytical Thinking</span>
+                            <span class="skill-tag">Academic Excellence</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item fade-in-left">
+                    <div class="timeline-date">2022</div>
+                    <div class="timeline-content">
+                         <h3>Dakshana Scholar</h3>
+                         <h4>Academic Recognition</h4>
+                         <p>Selected as a Dakshana Scholar after Class 10 through a competitive national exam, earning a fully-funded residential scholarship for JEE preparation. This reflects exceptional academic potential and dedication to excellence in STEM education.</p>
+                         <div class="timeline-skills">
+                            <span class="skill-tag">Merit-Based Selection</span>
+                            <span class="skill-tag">STEM Foundation</span>
+                            <span class="skill-tag">Academic Commitment</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="timeline-item fade-in-right">
+                    <div class="timeline-date">2017</div>
+                    <div class="timeline-content">
+                        <h3>JNVST Qualified</h3>
+                        <h4>Early Academic Recognition</h4>
+                        <p>Qualified for Jawahar Navodaya Vidyalaya Selection Test at the young age of 11, demonstrating exceptional academic potential. Also received MSCE Pune Pre Upper Primary Scholarship for academic excellence.</p>
+                        <div class="timeline-skills">
+                            <span class="skill-tag">Early Achiever</span>
+                            <span class="skill-tag">Scholarship Recipient</span>
+                            <span class="skill-tag">Academic Excellence</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's discuss opportunities and collaborations</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info fade-in-left">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>godwehemant@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+91 7517738621</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Mumbai, Maharashtra, India</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <form class="contact-form fade-in-right" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="" required>
+                        <label for="name">Name</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="" required>
+                        <label for="email">Email</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="" required>
+                        <label for="subject">Subject</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="" rows="5" required></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; Hemant Godve. All rights reserved.</p>
+                <p>Made with <i class="fas fa-heart"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
