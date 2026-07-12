@@ -1,0 +1,5 @@
+{
+  "label": "deepfake",
+  "synthetic": true,
+  "description": "Synthesized vocoder-style fingerprint (demo only)"
+}
